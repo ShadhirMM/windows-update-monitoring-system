@@ -1,0 +1,49 @@
+{
+  "_comment": "Copy to config.json (or let the installer do it). Keys starting with _ are ignored. Any key left out uses the built-in default.",
+  "Webhook": {
+    "Url": "",
+    "Format": "generic",
+    "SendOn": "Always",
+    "TimeoutSeconds": 15,
+    "RetryCount": 3
+  },
+  "Thresholds": {
+    "LastUpdateWarnDays": 35,
+    "LastUpdateAlertDays": 60,
+    "PauseAlertDays": 7,
+    "QualityDeferralWarnDays": 7,
+    "QualityDeferralAlertDays": 14,
+    "FeatureDeferralWarnDays": 180,
+    "RebootAlertDays": 7,
+    "FailureLookbackDays": 30,
+    "FailureAlertCount": 3,
+    "OsEndOfServiceWarnDays": 60
+  },
+  "History": {
+    "QualityUpdatePattern": "(Cumulative|Security|Quality) Update",
+    "ExcludePattern": "Security Intelligence|Defender|\\.NET|Malicious Software Removal"
+  },
+  "AllowedWsusServers": [],
+  "UnknownBuildStatus": "WARNING",
+  "_OsLifecycle": "End-of-servicing dates per build and channel (Pro = Home/Pro, Enterprise = Enterprise/Education, Ltsc, Server). Verify at https://learn.microsoft.com/lifecycle and add new builds as they ship.",
+  "OsLifecycle": [
+    { "Build": 17763, "Release": "Windows 10 1809 / LTSC 2019 / Server 2019", "Pro": "2020-11-10", "Enterprise": "2021-05-11", "Ltsc": "2029-01-09", "Server": "2029-01-09" },
+    { "Build": 19044, "Release": "Windows 10 21H2 / LTSC 2021", "Pro": "2023-06-13", "Enterprise": "2024-06-11", "Ltsc": "2027-01-12", "Server": null },
+    { "Build": 19045, "Release": "Windows 10 22H2", "Pro": "2025-10-14", "Enterprise": "2025-10-14", "Ltsc": null, "Server": null },
+    { "Build": 20348, "Release": "Windows Server 2022", "Pro": null, "Enterprise": null, "Ltsc": null, "Server": "2031-10-14" },
+    { "Build": 22621, "Release": "Windows 11 22H2", "Pro": "2024-10-08", "Enterprise": "2025-10-14", "Ltsc": null, "Server": null },
+    { "Build": 22631, "Release": "Windows 11 23H2", "Pro": "2025-11-11", "Enterprise": "2026-11-10", "Ltsc": null, "Server": null },
+    { "Build": 26100, "Release": "Windows 11 24H2 / LTSC 2024 / Server 2025", "Pro": "2026-10-13", "Enterprise": "2027-10-12", "Ltsc": "2029-10-09", "Server": "2034-11-14" },
+    { "Build": 26200, "Release": "Windows 11 25H2", "Pro": "2027-10-12", "Enterprise": "2028-10-10", "Ltsc": null, "Server": null }
+  ],
+  "Logging": {
+    "Path": "C:\\ProgramData\\WUMonitor\\Logs",
+    "RetentionDays": 30,
+    "EventLog": true
+  },
+  "Outbox": {
+    "Path": "C:\\ProgramData\\WUMonitor\\Outbox",
+    "MaxAgeDays": 30
+  },
+  "Computers": []
+}

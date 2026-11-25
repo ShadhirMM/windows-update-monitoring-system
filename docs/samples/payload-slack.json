@@ -1,0 +1,28 @@
+﻿{
+    "text":  "🚨 OFFICE-PC-01: Windows Update ALERT",
+    "blocks":  [
+                   {
+                       "type":  "header",
+                       "text":  {
+                                    "type":  "plain_text",
+                                    "text":  "🚨 OFFICE-PC-01: Windows Update ALERT"
+                                }
+                   },
+                   {
+                       "type":  "section",
+                       "text":  {
+                                    "type":  "mrkdwn",
+                                    "text":  "✅ *ServiceState* - Update services enabled (wuauserv: Manual, UsoSvc: Automatic, WaaSMedicSvc: Manual)\n⚠ *AutoUpdatePolicy* - AUOptions=3: download automatically, notify to install; installs need manual action\n🚨 *PauseState* - Updates paused until 2026-12-16 (21 days remaining)\n✅ *DeferralPolicy* - No update deferral configured\n✅ *UpdateSource* - Microsoft Windows Update online service\n⚠ *LastQualityUpdate* - 41 days ago on 2026-10-15: 2026-10 Security Update (KB5000001) (26200.7019)\n⚠ *RecentFailures* - 1 unresolved failed update(s) in the last 30 days: KB5000002 (0x80070643)\n⚠ *PendingReboot* - Reboot pending (Windows Update); last boot 2 days ago\n✅ *OsSupport* - Microsoft Windows 11 Pro 25H2 (build 26200.7171) supported until 2027-10-12 (Pro channel)"
+                                }
+                   },
+                   {
+                       "type":  "context",
+                       "elements":  [
+                                        {
+                                            "type":  "mrkdwn",
+                                            "text":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171) | 2026-11-25T12:00:00Z | WUMonitor 1.0.0"
+                                        }
+                                    ]
+                   }
+               ]
+}

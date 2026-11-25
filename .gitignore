@@ -1,0 +1,17 @@
+# Real config holds the webhook secret - only config.example.json is committed
+config/config.json
+*.local.json
+
+# Runtime output
+logs/
+Logs/
+Outbox/
+TestResults/
+dist/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store

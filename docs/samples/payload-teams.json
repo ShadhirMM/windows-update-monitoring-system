@@ -1,0 +1,77 @@
+﻿{
+    "type":  "message",
+    "attachments":  [
+                        {
+                            "contentType":  "application/vnd.microsoft.card.adaptive",
+                            "contentUrl":  null,
+                            "content":  {
+                                            "$schema":  "http://adaptivecards.io/schemas/adaptive-card.json",
+                                            "type":  "AdaptiveCard",
+                                            "version":  "1.4",
+                                            "body":  [
+                                                         {
+                                                             "type":  "TextBlock",
+                                                             "size":  "Large",
+                                                             "weight":  "Bolder",
+                                                             "wrap":  true,
+                                                             "color":  "Attention",
+                                                             "text":  "🚨 OFFICE-PC-01: Windows Update ALERT"
+                                                         },
+                                                         {
+                                                             "type":  "TextBlock",
+                                                             "isSubtle":  true,
+                                                             "wrap":  true,
+                                                             "spacing":  "None",
+                                                             "text":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171) | 2026-11-25T12:00:00Z | WUMonitor 1.0.0"
+                                                         },
+                                                         {
+                                                             "type":  "TextBlock",
+                                                             "wrap":  true,
+                                                             "text":  "1 ALERT, 4 WARNING, 4 OK"
+                                                         },
+                                                         {
+                                                             "type":  "FactSet",
+                                                             "facts":  [
+                                                                           {
+                                                                               "title":  "ServiceState",
+                                                                               "value":  "OK: Update services enabled (wuauserv: Manual, UsoSvc: Automatic, WaaSMedicSvc: Manual)"
+                                                                           },
+                                                                           {
+                                                                               "title":  "AutoUpdatePolicy",
+                                                                               "value":  "WARNING: AUOptions=3: download automatically, notify to install; installs need manual action"
+                                                                           },
+                                                                           {
+                                                                               "title":  "PauseState",
+                                                                               "value":  "ALERT: Updates paused until 2026-12-16 (21 days remaining)"
+                                                                           },
+                                                                           {
+                                                                               "title":  "DeferralPolicy",
+                                                                               "value":  "OK: No update deferral configured"
+                                                                           },
+                                                                           {
+                                                                               "title":  "UpdateSource",
+                                                                               "value":  "OK: Microsoft Windows Update online service"
+                                                                           },
+                                                                           {
+                                                                               "title":  "LastQualityUpdate",
+                                                                               "value":  "WARNING: 41 days ago on 2026-10-15: 2026-10 Security Update (KB5000001) (26200.7019)"
+                                                                           },
+                                                                           {
+                                                                               "title":  "RecentFailures",
+                                                                               "value":  "WARNING: 1 unresolved failed update(s) in the last 30 days: KB5000002 (0x80070643)"
+                                                                           },
+                                                                           {
+                                                                               "title":  "PendingReboot",
+                                                                               "value":  "WARNING: Reboot pending (Windows Update); last boot 2 days ago"
+                                                                           },
+                                                                           {
+                                                                               "title":  "OsSupport",
+                                                                               "value":  "OK: Microsoft Windows 11 Pro 25H2 (build 26200.7171) supported until 2027-10-12 (Pro channel)"
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                        }
+                        }
+                    ]
+}

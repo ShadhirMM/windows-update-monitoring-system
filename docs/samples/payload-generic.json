@@ -1,0 +1,59 @@
+﻿{
+    "source":  "WUMonitor",
+    "host":  "OFFICE-PC-01",
+    "status":  "ALERT",
+    "summary":  "1 ALERT, 4 WARNING, 4 OK",
+    "timestamp":  "2026-11-25T12:00:00Z",
+    "operatingSystem":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171)",
+    "version":  "1.0.0",
+    "checks":  [
+                   {
+                       "name":  "ServiceState",
+                       "status":  "OK",
+                       "message":  "Update services enabled (wuauserv: Manual, UsoSvc: Automatic, WaaSMedicSvc: Manual)"
+                   },
+                   {
+                       "name":  "AutoUpdatePolicy",
+                       "status":  "WARNING",
+                       "message":  "AUOptions=3: download automatically, notify to install; installs need manual action"
+                   },
+                   {
+                       "name":  "PauseState",
+                       "status":  "ALERT",
+                       "message":  "Updates paused until 2026-12-16 (21 days remaining)"
+                   },
+                   {
+                       "name":  "DeferralPolicy",
+                       "status":  "OK",
+                       "message":  "No update deferral configured"
+                   },
+                   {
+                       "name":  "UpdateSource",
+                       "status":  "OK",
+                       "message":  "Microsoft Windows Update online service"
+                   },
+                   {
+                       "name":  "LastQualityUpdate",
+                       "status":  "WARNING",
+                       "message":  "41 days ago on 2026-10-15: 2026-10 Security Update (KB5000001) (26200.7019)"
+                   },
+                   {
+                       "name":  "RecentFailures",
+                       "status":  "WARNING",
+                       "message":  "1 unresolved failed update(s) in the last 30 days: KB5000002 (0x80070643)"
+                   },
+                   {
+                       "name":  "PendingReboot",
+                       "status":  "WARNING",
+                       "message":  "Reboot pending (Windows Update); last boot 2 days ago"
+                   },
+                   {
+                       "name":  "OsSupport",
+                       "status":  "OK",
+                       "message":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171) supported until 2027-10-12 (Pro channel)"
+                   }
+               ],
+    "collectorErrors":  [
+
+                        ]
+}

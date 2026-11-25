@@ -1,0 +1,61 @@
+﻿{
+    "username":  "WU Monitor",
+    "embeds":  [
+                   {
+                       "title":  "🚨 OFFICE-PC-01: Windows Update ALERT",
+                       "description":  "1 ALERT, 4 WARNING, 4 OK",
+                       "color":  15158332,
+                       "fields":  [
+                                      {
+                                          "name":  "✅ ServiceState",
+                                          "value":  "Update services enabled (wuauserv: Manual, UsoSvc: Automatic, WaaSMedicSvc: Manual)",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "⚠ AutoUpdatePolicy",
+                                          "value":  "AUOptions=3: download automatically, notify to install; installs need manual action",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "🚨 PauseState",
+                                          "value":  "Updates paused until 2026-12-16 (21 days remaining)",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "✅ DeferralPolicy",
+                                          "value":  "No update deferral configured",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "✅ UpdateSource",
+                                          "value":  "Microsoft Windows Update online service",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "⚠ LastQualityUpdate",
+                                          "value":  "41 days ago on 2026-10-15: 2026-10 Security Update (KB5000001) (26200.7019)",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "⚠ RecentFailures",
+                                          "value":  "1 unresolved failed update(s) in the last 30 days: KB5000002 (0x80070643)",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "⚠ PendingReboot",
+                                          "value":  "Reboot pending (Windows Update); last boot 2 days ago",
+                                          "inline":  false
+                                      },
+                                      {
+                                          "name":  "✅ OsSupport",
+                                          "value":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171) supported until 2027-10-12 (Pro channel)",
+                                          "inline":  false
+                                      }
+                                  ],
+                       "footer":  {
+                                      "text":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171) | 2026-11-25T12:00:00Z | WUMonitor 1.0.0"
+                                  },
+                       "timestamp":  "2026-11-25T12:00:00Z"
+                   }
+               ]
+}
